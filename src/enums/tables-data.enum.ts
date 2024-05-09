@@ -17,10 +17,26 @@ export enum ProjectFields {
     TITLE = "title",
 }
 
+export enum UserFields {
+    DESCRIPTION = "description",
+    TITLE = "title",
+    USERNAME = 'username',
+    FIRSTNAME  = 'firstName',
+    LASTNAME = 'lastName',
+    EMAIL = 'email',
+    PASSWORD = 'password',
+    PHONE_NUMBER = 'phoneNumber',
+    ADDRESS = 'address',
+    GENDER = 'gender',
+    ROLE = 'role',
+    AVATAR = 'avatar',
+}
+
 export enum TablesNames {
     PROPERTY = "property",
     MODAL = "modal",
     PROJECT = "project",
+    USERS = "users",
 }
 
-export type AllTablesColumns = PropertyFields | ModalFields | ProjectFields;
+export type AllTablesColumns = UserFields | PropertyFields | ModalFields | ProjectFields;
